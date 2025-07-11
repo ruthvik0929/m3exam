@@ -1,7 +1,41 @@
 <pre>
 <font color="#000000">LIST</font><font color="#434f54">:</font>
+
 <font color="#000000">students</font> <font color="#434f54">=</font> <font color="#000000">[</font><font color="#005c5f">&#34;ruthvik&#34;</font><font color="#434f54">,</font><font color="#005c5f">&#34;sanjith&#34;</font><font color="#434f54">,</font><font color="#005c5f">&#34;arfan&#34;</font><font color="#434f54">,</font><font color="#005c5f">&#34;shounak&#34;</font><font color="#434f54">,</font><font color="#005c5f">&#34;srithan&#34;</font><font color="#000000">]</font>
 <font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;First student-&#34;</font><font color="#434f54">,</font><font color="#000000">students</font><font color="#000000">[</font><font color="#000000">0</font><font color="#000000">]</font><font color="#000000">)</font>
 <font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;Last student-&#34;</font><font color="#434f54">,</font><font color="#000000">students</font><font color="#000000">[</font><font color="#434f54">-</font><font color="#000000">1</font><font color="#000000">]</font><font color="#000000">)</font>
+
+<font color="#434f54">+</font><font color="#434f54">-</font><font color="#000000">(</font><font color="#434f54">+</font><font color="#000000">)</font>
+
+<font color="#000000">marks</font> <font color="#434f54">=</font> <font color="#000000">[</font><font color="#000000">85</font><font color="#434f54">,</font> <font color="#000000">90</font><font color="#434f54">,</font> <font color="#000000">78</font><font color="#434f54">,</font> <font color="#000000">88</font><font color="#434f54">,</font> <font color="#000000">92</font><font color="#000000">]</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;Total Marks:&#34;</font><font color="#000000">;</font><font color="#434f54">,</font> <font color="#000000">sum</font><font color="#000000">(</font><font color="#000000">marks</font><font color="#000000">)</font><font color="#000000">)</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;Highest Mark:&#34;</font><font color="#434f54">,</font> <font color="#d35400">max</font><font color="#000000">(</font><font color="#000000">marks</font><font color="#000000">)</font><font color="#000000">)</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;Lowest Mark:&#34;</font><font color="#434f54">,</font> <font color="#d35400">min</font><font color="#000000">(</font><font color="#000000">marks</font><font color="#000000">)</font><font color="#000000">)</font>
+
+
+<font color="#000000">3.</font> <font color="#000000">List</font> <font color="#000000">Slicing</font> <font color="#5e6d03">and</font> <font color="#000000">Indexing</font>
+
+<font color="#000000">students</font><font color="#434f54">=</font><font color="#000000">[</font><font color="#005c5f">&#34;Shounak&#34;</font><font color="#434f54">,</font><font color="#005c5f">&#34;Srithan&#34;</font><font color="#434f54">,</font><font color="#005c5f">&#34;Sanjith&#34;</font><font color="#434f54">,</font><font color="#005c5f">&#34;Me&#34;</font><font color="#434f54">,</font><font color="#005c5f">&#34;Arfan&#34;</font><font color="#000000">]</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;First three students:&#34;</font><font color="#434f54">,</font> <font color="#000000">students</font><font color="#000000">[</font><font color="#434f54">:</font><font color="#000000">3</font><font color="#000000">]</font><font color="#000000">)</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;Last two students:&#34;</font><font color="#434f54">,</font> <font color="#000000">students</font><font color="#000000">[</font><font color="#434f54">-</font><font color="#000000">2</font><font color="#434f54">:</font><font color="#000000">]</font><font color="#000000">)</font>
+
+
+<font color="#000000">5.</font> <font color="#000000">Practical</font> <font color="#000000">Example</font><font color="#434f54">:</font> <font color="#000000">Calculate</font> <font color="#000000">Average</font> <font color="#000000">Marks</font>
+
+<font color="#000000">marks</font> <font color="#434f54">=</font> <font color="#000000">[</font><font color="#000000">]</font>
+<font color="#5e6d03">for</font> <font color="#000000">i</font> <font color="#000000">in</font> <font color="#000000">range</font><font color="#000000">(</font><font color="#000000">5</font><font color="#000000">)</font><font color="#434f54">:</font>
+<font color="#000000">mark</font> <font color="#434f54">=</font> <font color="#00979c">int</font> <font color="#000000">(</font><font color="#000000">input</font> <font color="#000000">(</font><font color="#000000">f</font><font color="#005c5f">&#34;Enter mark {i+1}: &#34;</font><font color="#000000">)</font><font color="#000000">)</font>
+<font color="#000000">marks</font><font color="#434f54">.</font> <font color="#000000">Append</font><font color="#000000">(</font><font color="#000000">mark</font><font color="#000000">)</font>
+<font color="#000000">average</font> <font color="#434f54">=</font> <font color="#000000">sum</font><font color="#000000">(</font><font color="#000000">marks</font><font color="#000000">)</font> <font color="#434f54">&#47;</font> <font color="#000000">len</font><font color="#000000">(</font><font color="#000000">marks</font><font color="#000000">)</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;Average Marks:&#34;</font><font color="#434f54">,</font> <font color="#000000">average</font><font color="#000000">)</font>
+
+
+<font color="#000000">Odd</font> <font color="#5e6d03">or</font> <font color="#000000">Even</font>
+
+<font color="#000000">num</font> <font color="#434f54">=</font> <font color="#00979c">int</font><font color="#000000">(</font><font color="#000000">input</font><font color="#000000">(</font><font color="#005c5f">&#34;Enter a number: &#34;</font><font color="#000000">)</font><font color="#000000">)</font>
+<font color="#5e6d03">if</font> <font color="#000000">num</font> <font color="#434f54">%</font> <font color="#000000">2</font> <font color="#434f54">==</font> <font color="#000000">0</font><font color="#434f54">:</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;Even number&#34;</font><font color="#000000">)</font>
+<font color="#5e6d03">else</font><font color="#434f54">:</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;Odd number&#34;</font><font color="#000000">)</font>
 
 </pre>
