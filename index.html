@@ -1,37 +1,61 @@
 <pre>
-<font color="#000000">Rows</font><font color="#434f54">:</font>
-<font color="#000000">n</font><font color="#434f54">=</font><font color="#00979c">int</font><font color="#000000">(</font><font color="#000000">input</font><font color="#000000">(</font><font color="#005c5f">&#34;enter no. of rows&#34;</font><font color="#000000">)</font><font color="#000000">)</font>
-<font color="#5e6d03">for</font> <font color="#000000">a</font> <font color="#000000">in</font> <font color="#000000">range</font><font color="#000000">(</font><font color="#000000">n</font><font color="#000000">)</font><font color="#434f54">:</font>
- &nbsp;&nbsp;&nbsp;<font color="#5e6d03">for</font> <font color="#000000">b</font> <font color="#000000">in</font> <font color="#000000">range</font><font color="#000000">(</font><font color="#000000">n</font><font color="#434f54">-</font><font color="#000000">a</font><font color="#434f54">-</font><font color="#000000">1</font><font color="#000000">)</font><font color="#434f54">:</font>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34; &#34;</font><font color="#434f54">,</font><font color="#d35400">end</font><font color="#434f54">=</font><font color="#005c5f">&#34;&#34;</font><font color="#000000">)</font>
- &nbsp;&nbsp;&nbsp;<font color="#5e6d03">for</font> <font color="#000000">b</font> <font color="#000000">in</font> <font color="#000000">range</font><font color="#000000">(</font><font color="#000000">a</font><font color="#434f54">+</font><font color="#000000">1</font><font color="#000000">)</font><font color="#434f54">:</font>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">a</font><font color="#434f54">+</font><font color="#000000">1</font><font color="#434f54">,</font><font color="#d35400">end</font><font color="#434f54">=</font><font color="#005c5f">&#34; &#34;</font><font color="#000000">)</font>
- &nbsp;&nbsp;&nbsp;<font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">)</font>
+<font color="#000000">Creating</font> <font color="#5e6d03">and</font> <font color="#000000">Accessing</font> <font color="#000000">Lists</font>
 
-<font color="#000000">Line</font> <font color="#000000">Graph</font><font color="#434f54">:</font>
-<font color="#434f54">%</font><font color="#000000">matplotlib</font> <font color="#00979c">inline</font> &nbsp;
-<font color="#000000">import</font> <font color="#000000">matplotlib</font><font color="#434f54">.</font><font color="#000000">pyplot</font> <font color="#000000">as</font> <font color="#000000">plt</font>
-<font color="#000000">import</font> <font color="#000000">numpy</font> <font color="#000000">as</font> <font color="#000000">np</font>
-<font color="#000000">ypoints</font> <font color="#434f54">=</font> <font color="#000000">np</font><font color="#434f54">.</font><font color="#00979c">array</font><font color="#000000">(</font><font color="#000000">[</font><font color="#000000">3</font><font color="#434f54">,</font> <font color="#000000">8</font><font color="#434f54">,</font> <font color="#000000">1</font><font color="#434f54">,</font> <font color="#000000">10</font><font color="#000000">]</font><font color="#000000">)</font>
-<font color="#000000">plt</font><font color="#434f54">.</font><font color="#000000">plot</font><font color="#000000">(</font><font color="#000000">ypoints</font><font color="#434f54">,</font> <font color="#000000">marker</font><font color="#434f54">=</font><font color="#00979c">&#39;*&#39;</font><font color="#000000">)</font>
-<font color="#000000">plt</font><font color="#434f54">.</font><font color="#000000">show</font><font color="#000000">(</font><font color="#000000">)</font>
+<font color="#000000">students</font> <font color="#434f54">=</font> <font color="#000000">[</font><font color="#005c5f">&#34;Ananya&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;Ravi&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;Priya&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;Arjun&#34;</font><font color="#000000">]</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;First student:&#34;</font><font color="#434f54">,</font> <font color="#000000">students</font> <font color="#000000">[</font><font color="#000000">0</font><font color="#000000">]</font><font color="#000000">)</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;Last student:&#34;</font><font color="#434f54">,</font> <font color="#000000">students</font> <font color="#000000">[</font><font color="#000000">3</font><font color="#000000">]</font><font color="#000000">)</font>
 
-<font color="#000000">Bar</font> <font color="#000000">Graph</font><font color="#434f54">:</font>
-<font color="#434f54">%</font><font color="#000000">matplotlib</font> <font color="#00979c">inline</font>
-<font color="#000000">import</font> <font color="#000000">matplotlib</font><font color="#434f54">.</font><font color="#000000">pyplot</font> <font color="#000000">as</font> <font color="#000000">plt</font>
-<font color="#000000">categories</font> <font color="#434f54">=</font> <font color="#000000">[</font><font color="#000000">&#39;Math&#39;</font><font color="#434f54">,</font> <font color="#000000">&#39;Science&#39;</font><font color="#434f54">,</font> <font color="#000000">&#39;History&#39;</font><font color="#434f54">,</font> <font color="#000000">&#39;Art&#39;</font><font color="#000000">]</font>
-<font color="#000000">scores</font> <font color="#434f54">=</font> <font color="#000000">[</font><font color="#000000">85</font><font color="#434f54">,</font> <font color="#000000">90</font><font color="#434f54">,</font> <font color="#000000">78</font><font color="#434f54">,</font> <font color="#000000">88</font><font color="#000000">]</font>
-<font color="#000000">plt</font><font color="#434f54">.</font><font color="#000000">bar</font><font color="#000000">(</font><font color="#000000">categories</font><font color="#434f54">,</font> <font color="#000000">scores</font><font color="#434f54">,</font> <font color="#000000">color</font><font color="#434f54">=</font><font color="#000000">[</font><font color="#000000">&#39;blue&#39;</font><font color="#434f54">,</font> <font color="#000000">&#39;green&#39;</font><font color="#434f54">,</font> <font color="#000000">&#39;red&#39;</font><font color="#434f54">,</font> <font color="#000000">&#39;purple&#39;</font><font color="#000000">]</font><font color="#000000">)</font>
-<font color="#000000">plt</font><font color="#434f54">.</font><font color="#000000">xlabel</font><font color="#000000">(</font><font color="#000000">&#39;Subjects&#39;</font><font color="#000000">)</font>
-<font color="#000000">plt</font><font color="#434f54">.</font><font color="#000000">ylabel</font><font color="#000000">(</font><font color="#000000">&#39;Scores&#39;</font><font color="#000000">)</font>
-<font color="#000000">plt</font><font color="#434f54">.</font><font color="#000000">title</font><font color="#000000">(</font><font color="#000000">&#39;Student Scores in Different Subjects&#39;</font><font color="#000000">)</font>
-<font color="#000000">plt</font><font color="#434f54">.</font><font color="#000000">show</font><font color="#000000">(</font><font color="#000000">)</font>
+ <font color="#000000">List</font> <font color="#000000">Operations</font><font color="#434f54">:</font> <font color="#000000">Adding</font> <font color="#5e6d03">and</font> <font color="#000000">Removing</font> <font color="#000000">Elements</font>
+ 
+<font color="#000000">students</font><font color="#434f54">=</font><font color="#000000">[</font><font color="#005c5f">&#34;vijay&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;aarya&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;akhil&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;manoj&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;sanjana&#34;</font><font color="#434f54">,</font><font color="#005c5f">&#34;Arjun&#34;</font><font color="#000000">]</font>
+<font color="#000000">students</font><font color="#434f54">.</font><font color="#000000">append</font><font color="#000000">(</font><font color="#005c5f">&#34;Neha&#34;</font><font color="#000000">)</font>
+<font color="#000000">students</font><font color="#434f54">.</font><font color="#000000">insert</font><font color="#000000">(</font><font color="#000000">2</font><font color="#434f54">,</font> <font color="#005c5f">&#34;Karan&#34;</font><font color="#000000">)</font>
+<font color="#000000">students</font><font color="#434f54">.</font><font color="#d35400">remove</font><font color="#000000">(</font><font color="#005c5f">&#34;Arjun&#34;</font><font color="#000000">)</font>
+<font color="#000000">popped_student</font> <font color="#434f54">=</font> <font color="#000000">students</font><font color="#434f54">.</font><font color="#000000">pop</font><font color="#000000">(</font><font color="#000000">)</font>
+<font color="#d35400">print</font> <font color="#000000">(</font><font color="#005c5f">&#34;Updated list of students:&#34;</font><font color="#434f54">,</font> <font color="#000000">students</font><font color="#000000">)</font>
 
-<font color="#000000">Pie</font> <font color="#000000">Chart</font><font color="#434f54">:</font>
-<font color="#000000">import</font> <font color="#000000">matplotlib</font><font color="#434f54">.</font><font color="#000000">pyplot</font> <font color="#000000">as</font> <font color="#000000">plt</font>
-<font color="#000000">import</font> <font color="#000000">numpy</font> <font color="#000000">as</font> <font color="#000000">np</font>
-<font color="#000000">y</font><font color="#434f54">=</font><font color="#000000">np</font><font color="#434f54">.</font><font color="#00979c">array</font><font color="#000000">(</font><font color="#000000">[</font><font color="#000000">31</font><font color="#434f54">,</font><font color="#000000">29</font><font color="#434f54">,</font><font color="#000000">28</font><font color="#434f54">,</font><font color="#000000">12</font><font color="#000000">]</font><font color="#000000">)</font>
-<font color="#000000">plt</font><font color="#434f54">.</font><font color="#000000">pie</font><font color="#000000">(</font><font color="#000000">y</font><font color="#434f54">,</font><font color="#000000">autopct</font><font color="#434f54">=</font><font color="#000000">&#39;%d&#39;</font><font color="#000000">)</font>
-<font color="#000000">plt</font><font color="#434f54">.</font><font color="#000000">show</font><font color="#000000">(</font><font color="#000000">)</font>
+<font color="#000000">Adding</font> <font color="#000000">elements</font>
+
+<font color="#000000">thislist</font> <font color="#434f54">=</font> <font color="#000000">[</font><font color="#005c5f">&#34;apple&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;banana&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;cherry&#34;</font><font color="#000000">]</font>
+<font color="#000000">thislist</font><font color="#434f54">.</font><font color="#000000">append</font><font color="#000000">(</font><font color="#005c5f">&#34;orange&#34;</font><font color="#000000">)</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">thislist</font><font color="#000000">)</font>
+
+<font color="#000000">List</font> <font color="#000000">objects</font> <font color="#000000">have</font> <font color="#000000">a</font> <font color="#000000">sort</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">method</font> <font color="#000000">that</font> <font color="#000000">will</font> <font color="#000000">sort</font> <font color="#000000">the</font> <font color="#000000">list</font>
+<font color="#000000">alphanumerically</font><font color="#434f54">,</font> <font color="#000000">ascending</font><font color="#434f54">,</font> <font color="#000000">by</font> <font color="#5e6d03">default</font><font color="#434f54">:</font>
+
+<font color="#000000">num</font><font color="#434f54">=</font><font color="#000000">[</font><font color="#000000">5</font><font color="#434f54">,</font><font color="#000000">7</font><font color="#434f54">,</font><font color="#000000">2</font><font color="#434f54">,</font><font color="#000000">1</font><font color="#434f54">,</font><font color="#000000">8</font><font color="#434f54">,</font><font color="#000000">3</font><font color="#000000">]</font>
+<font color="#000000">num</font><font color="#434f54">.</font><font color="#000000">sort</font><font color="#000000">(</font><font color="#000000">)</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">num</font><font color="#000000">)</font>
+
+<font color="#000000">List</font> <font color="#000000">objects</font> <font color="#000000">have</font> <font color="#000000">a</font> <font color="#000000">sort</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">method</font> <font color="#000000">that</font> <font color="#000000">will</font> <font color="#000000">sort</font> <font color="#000000">the</font> <font color="#000000">list</font>
+<font color="#000000">alphanumerically</font><font color="#434f54">,</font> <font color="#000000">descending</font><font color="#434f54">,</font> <font color="#000000">by</font> <font color="#5e6d03">default</font><font color="#434f54">:</font>
+
+<font color="#000000">num</font><font color="#434f54">=</font><font color="#000000">[</font><font color="#000000">5</font><font color="#434f54">,</font><font color="#000000">7</font><font color="#434f54">,</font><font color="#000000">2</font><font color="#434f54">,</font><font color="#000000">1</font><font color="#434f54">,</font><font color="#000000">8</font><font color="#434f54">,</font><font color="#000000">3</font><font color="#000000">]</font>
+<font color="#000000">num</font><font color="#434f54">.</font><font color="#000000">sort</font><font color="#000000">(</font><font color="#000000">reverse</font><font color="#434f54">=</font><font color="#000000">True</font><font color="#000000">)</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">num</font><font color="#000000">)</font>
+
+<font color="#000000">List</font> <font color="#000000">Slicing</font> <font color="#5e6d03">and</font> <font color="#000000">Indexing</font>
+
+<font color="#000000">students</font><font color="#434f54">=</font><font color="#000000">[</font><font color="#005c5f">&#34;vijay&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;aarya&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;akhil&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;manoj&#34;</font><font color="#434f54">,</font> <font color="#005c5f">&#34;sanjana&#34;</font><font color="#000000">]</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;First three students:&#34;</font><font color="#434f54">,</font> <font color="#000000">students</font><font color="#000000">[</font><font color="#434f54">:</font><font color="#000000">3</font><font color="#000000">]</font><font color="#000000">)</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;Last two students:&#34;</font><font color="#434f54">,</font> <font color="#000000">students</font><font color="#000000">[</font><font color="#000000">3</font><font color="#434f54">:</font><font color="#000000">]</font><font color="#000000">)</font>
+
+<font color="#000000">Changing</font> <font color="#000000">Value</font>
+
+<font color="#000000">num</font> <font color="#434f54">=</font> <font color="#000000">[</font><font color="#000000">1</font><font color="#434f54">,</font> <font color="#000000">4</font><font color="#434f54">,</font> <font color="#000000">3</font><font color="#434f54">,</font><font color="#000000">7</font><font color="#000000">]</font>
+<font color="#000000">num</font><font color="#000000">[</font><font color="#000000">1</font><font color="#000000">]</font> <font color="#434f54">=</font> <font color="#000000">5</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">num</font><font color="#000000">)</font>
+
+<font color="#000000">Sumnation</font>
+
+<font color="#000000">a</font><font color="#434f54">=</font><font color="#000000">[</font><font color="#000000">1</font><font color="#434f54">,</font><font color="#000000">2</font><font color="#434f54">,</font><font color="#000000">3</font><font color="#434f54">,</font><font color="#000000">4</font><font color="#000000">]</font>
+<font color="#000000">b</font><font color="#434f54">=</font><font color="#000000">[</font><font color="#000000">5</font><font color="#434f54">,</font><font color="#000000">6</font><font color="#434f54">,</font><font color="#000000">7</font><font color="#434f54">,</font><font color="#000000">8</font><font color="#000000">]</font>
+<font color="#000000">c</font><font color="#434f54">=</font><font color="#000000">a</font><font color="#000000">[</font><font color="#000000">0</font><font color="#000000">]</font><font color="#434f54">+</font><font color="#000000">b</font><font color="#000000">[</font><font color="#000000">0</font><font color="#000000">]</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">c</font><font color="#000000">)</font>
+
+<font color="#000000">number</font>
+
+<font color="#000000">num</font> <font color="#434f54">=</font> <font color="#000000">[</font><font color="#000000">1</font><font color="#434f54">,</font> <font color="#000000">4</font><font color="#434f54">,</font> <font color="#000000">3</font><font color="#434f54">,</font><font color="#000000">7</font><font color="#000000">]</font>
+<font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">num</font><font color="#000000">[</font><font color="#000000">0</font><font color="#000000">]</font><font color="#000000">)</font>
 
 </pre>
